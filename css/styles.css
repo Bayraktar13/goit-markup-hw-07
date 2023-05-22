@@ -216,7 +216,7 @@ p {
   line-height: 1.5;
   color: #434455;
   letter-spacing: 0.02em;
-  width: 264px;
+  /* width: 264px; */
 }
 
 .fourth-section {
@@ -345,7 +345,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
@@ -412,7 +412,7 @@ img {
 
 .second-section-list {
   /* аналог width */
-  flex-basis: calc((100% - 24px * 3) / 4);
+  /* flex-basis: calc((100% - 24px * 3) / 4); */
 }
 
 .svg-container {
@@ -861,4 +861,66 @@ ul.portfolio-buttons > li:last-child {
   right: 24px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .container {
+    max-width: 320px;
+    margin: 0;
+  }
+
+  .second-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .text-flex {
+    display: block;
+    gap: none;
+  }
+
+  .svg-container {
+    display: none;
+  }
+
+  .main-page-blocks-text-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+
+  .blocks-text {
+    font-weight: 500;
+    max-width: 428px;
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  .third-section {
+    display: none;
+  }
+
+  .fourth-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .fourth-section-list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .fourth-section-item {
+    margin-bottom: 72px;
+  }
+
+  .fourth-section-item:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    /* Задаю 100% чтобы фото не были больше, чем родитель - li */
+  }
 }
