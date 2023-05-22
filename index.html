@@ -18,13 +18,19 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- <header class="header-boarder">
+    <header class="header-boarder">
       <div class="flex-container container">
         <nav class="navigation">
           <a href="./index.html" class="logo link">
             Web
             <span class="logo-studio">Studio</span>
           </a>
+
+          <button class="burger-menu">
+            <svg width="32" height="22" class="burger-menu-svg">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
 
           <ul class="list header-list">
             <li>
@@ -57,10 +63,82 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu">
+        <div>
+          <button class="burger-menu-close-btn">
+            <svg width="8" height="8" class="burger-menu-close-svg">
+              <use href="./images/icons.svg#icon-close-mob"></use>
+            </svg>
+          </button>
+
+          <ul class="list mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link link">Studio</a>
+            </li>
+
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-menu-link link"
+                >Portfolio</a
+              >
+            </li>
+
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-address">
+            <ul class="list mob-address-list">
+              <li>
+                <a href="tel:+110001111111" class="mob-telephone link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-email link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="list mob-social-list">
+            <li class="social-items">
+              <a href="" class="social-link link">
+                <svg width="16" height="16" class="social">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-items">
+              <a href="" class="social-link link">
+                <svg width="16" height="16" class="social">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-items">
+              <a href="" class="social-link link">
+                <svg width="16" height="16" class="social">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-items">
+              <a href="" class="social-link link">
+                <svg width="16" height="16" class="social">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- FIRST SECTION -->
-      <!-- <section class="first-section">
+      <section class="first-section">
         <div class="container">
           <h1 class="text-hero">Effective Solutions for Your Business</h1>
 
@@ -68,7 +146,7 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- SECOND SECTION -->
       <section class="second-section">
         <div class="container">
@@ -340,42 +418,42 @@
           <ul class="list fifth-section-list">
             <li class="fifth-section-items">
               <a href="" class="fifth-section-links link">
-                <svg width="104" height="56" class="social-svg">
+                <svg width="110" height="56" class="social-svg">
                   <use href="./images/icons.svg#icon-ya-and-co"></use>
                 </svg>
               </a>
             </li>
             <li class="fifth-section-items">
               <a href="" class="fifth-section-links link">
-                <svg width="104" height="56" class="social-svg">
+                <svg width="110" height="56" class="social-svg">
                   <use href="./images/icons.svg#icon-tagline"></use>
                 </svg>
               </a>
             </li>
             <li class="fifth-section-items">
               <a href="" class="fifth-section-links link">
-                <svg width="104" height="56" class="social-svg">
+                <svg width="110" height="56" class="social-svg">
                   <use href="./images/icons.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
             <li class="fifth-section-items">
               <a href="" class="fifth-section-links link">
-                <svg width="104" height="56" class="social-svg">
+                <svg width="110" height="56" class="social-svg">
                   <use href="./images/icons.svg#icon-foster-peters"></use>
                 </svg>
               </a>
             </li>
             <li class="fifth-section-items">
               <a href="" class="fifth-section-links link">
-                <svg width="104" height="56" class="social-svg">
+                <svg width="110" height="56" class="social-svg">
                   <use href="./images/icons.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
             <li class="fifth-section-items">
               <a href="" class="fifth-section-links link">
-                <svg width="104" height="56" class="social-svg">
+                <svg width="110" height="56" class="social-svg">
                   <use href="./images/icons.svg#icon-company-tagline"></use>
                 </svg>
               </a>
@@ -385,7 +463,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container footer-flex-cnt">
         <div class="footer-left">
           <a href="./index.html" class="logo-footer link">
@@ -453,7 +531,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
