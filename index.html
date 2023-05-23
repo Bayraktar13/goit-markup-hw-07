@@ -26,7 +26,7 @@
             <span class="logo-studio">Studio</span>
           </a>
 
-          <button class="burger-menu">
+          <button class="burger-menu" data-menu-open>
             <svg width="32" height="22" class="burger-menu-svg">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
@@ -64,9 +64,9 @@
         </address>
       </div>
       <!-- MOBILE MENU -->
-      <div class="mobile-menu">
+      <div class="mobile-menu is-hidden" data-menu>
         <div>
-          <button class="burger-menu-close-btn">
+          <button class="burger-menu-close-btn" data-menu-close>
             <svg width="8" height="8" class="burger-menu-close-svg">
               <use href="./images/icons.svg#icon-close-mob"></use>
             </svg>
@@ -74,7 +74,7 @@
 
           <ul class="list mob-menu-list">
             <li class="mob-menu-item">
-              <a href="./index.html" class="mob-menu-link link">Studio</a>
+              <a href="./index.html" class="link mob-active">Studio</a>
             </li>
 
             <li class="mob-menu-item">
@@ -91,7 +91,7 @@
         <div>
           <address class="mob-address">
             <ul class="list mob-address-list">
-              <li>
+              <li class="mob-address-tel">
                 <a href="tel:+110001111111" class="mob-telephone link"
                   >+11 (000) 111-11-11</a
                 >
@@ -237,7 +237,7 @@
       </section>
       <!-- FOURTH SECTION -->
       <section class="fourth-section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="main-page-title">Our Team</h2>
           <ul class="list fourth-section-list">
             <li class="fourth-section-item">
@@ -413,7 +413,7 @@
       </section>
       <!-- FIFTH SECTION -->
       <section class="fifth-section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="main-page-title">Customers</h2>
           <ul class="list fifth-section-list">
             <li class="fifth-section-items">
@@ -636,5 +636,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
